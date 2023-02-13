@@ -1,6 +1,6 @@
 import { Montserrat } from '@next/font/google'
 import Cocogoose from '@next/font/local'
-import AnalyticsWrapper from './AnalyticsWrapper'
+import {AnalyticsWrapper} from './AnalyticsWrapper'
 import './globals.css'
 
 const montserrat =  Montserrat({
