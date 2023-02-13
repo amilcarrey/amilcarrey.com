@@ -1,4 +1,3 @@
-const { fontFamily } = require('tailwindcss/defaultTheme')
 /** @type {import('tailwindcss').Config} */
 const forms = require('@tailwindcss/forms')
 const typography = require('@tailwindcss/typography')
@@ -18,7 +17,7 @@ module.exports = {
          //D8E4FF
       },
       fontFamily: {
-         heading: ['Cocogoose', ...fontFamily.serif],
+         heading: "var(--cocogoogse-font)",
          primary: "var(--montserrat-font)"
       },
       keyframes: {
