@@ -1,4 +1,9 @@
+import { Montserrat } from '@next/font/google'
 import './globals.css'
+
+const montserrat =  Montserrat({
+   variable: "--montserrat-font",
+})
 
 export default function RootLayout({
    children,
@@ -6,7 +11,7 @@ export default function RootLayout({
    children: React.ReactNode
 }) {
    return (
-      <html lang="en">
+      <html lang="en" className={montserrat.variable}>
          {/*
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
