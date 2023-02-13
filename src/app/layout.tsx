@@ -1,5 +1,6 @@
 import { Montserrat } from '@next/font/google'
 import Cocogoose from '@next/font/local'
+import { Analytics } from '@vercel/analytics/react';
 import './globals.css'
 
 const montserrat =  Montserrat({
@@ -27,6 +28,7 @@ export default function RootLayout({
          <head />
 
          <body className='bg-dark'>{children}</body>
+         <Analytics />
       </html>
    )
 }
