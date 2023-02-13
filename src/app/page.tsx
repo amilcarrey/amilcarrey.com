@@ -29,7 +29,7 @@ export default function Home() {
       <main className="h-screen w-screen">
          <div className="flex h-full flex-col items-center justify-center gap-8">
             {/* a rounded full countainer using tailwind with Image component inside with /me.jpeg  */}
-            <div className="h-64 w-64 overflow-hidden rounded-full border border-white">
+            <div className="h-64 w-64 ring-4 ring-teal overflow-hidden rounded-full border">
                <Image
                   src="/me.jpeg"
                   alt="Picture of the author"
@@ -44,7 +44,20 @@ export default function Home() {
                width={256}
                height={256}
             />
-            
+            <div className="flex justify-center gap-6">
+               {socials.map((social) => (
+                  <Link href={social.link} key={social.name} target="_blank">
+                     <div className="p-3 cursor-pointer rounded-full ring-1 hover:scale-110 ring-teal">
+                        <Image
+                           src={social.icon}
+                           alt={social.name}
+                           width={32}
+                           height={32}
+                        />
+                     </div>
+                  </Link>
+               ))}
+            </div>
          </div>
       </main>
    )
