@@ -26,7 +26,7 @@ const socials = [
 
 export default function Home() {
    return (
-      <main className="h-screen w-screen">
+      <main className="h-screen w-screen max-h-screen">
          <div className="flex h-full flex-col items-center justify-center gap-8">
             {/* a rounded full countainer using tailwind with Image component inside with /me.jpeg  */}
             <div className="h-64 w-64 ring-4 ring-teal overflow-hidden rounded-full border">
